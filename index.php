@@ -2,17 +2,17 @@
 
 // FRONT CONTROLLER
 
-// Îáùèå íàñòğîéêè
+// ĞĞ±Ñ‰Ğ¸Ğµ Ğ½Ğ°ÑÑ‚Ñ€Ğ¾Ğ¹ĞºĞ¸
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
 session_start();
 
-// Ïîäêëş÷åíèå ôàéëîâ ñèñòåìû
+// ĞŸĞ¾Ğ´ĞºĞ»ÑÑ‡ĞµĞ½Ğ¸Ğµ Ñ„Ğ°Ğ¹Ğ»Ğ¾Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ñ‹
 define('ROOT', dirname(__FILE__));
 require_once(ROOT.'/components/Autoload.php');
 
 
-// Âûçîâ Router
+// Ğ’Ñ‹Ğ·Ğ¾Ğ² Router
 $router = new Router();
 $router->run();
